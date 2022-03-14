@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: blue;
+  box-shadow: 0 3px 30px rgba(0,0,0,0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar_row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar_right, li{
+  list-style-type: none;
+}
+
+.navbar_right,a{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 10px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  padding: 0 10px;
+  outline:none ;
+} 
+
+.mt-80{
+  margin-top: 80px;
+}
+.mt-100{
+  margin-top: 100px;
+}
+.p-15{
+  padding: 15px;
+}
+.ml-minus-15{
+  margin-left: -15px;
+}
+.mr-minus-15{
+  margin-left: -15px;
+}
+
+.main{
+  background: lightblue;
+  width: 97%;
+  height: 85vh;
+  margin: 30px;
+}
+
+.row{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar{
+  margin-top: 10px;
+}
+
+.sidebar_element{
+  background: lightblue;
+  padding: 15px;
+  border-top: none;
+}
+
+.group{
+  margin-bottom: -15px;
+}
+
+.group_control{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: white;
+  outline: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.5s;
+  border-radius: 5px;
+}
+
+.vline{
+  margin-left: 50px;
+  height: 85vh;
+  width: 2px;
+  background: grey;
+}
+
+.card{
+  margin: 20px 30px;
+  width: 75%;
+  background: white;
+  height: 80vh;
+  border-radius: 5px;
+}
+
+.btn{
+  text-decoration: none;
+  outline: none;
+  color: white;
+  height: 40px;
+  padding: 12px 10px;
+  font-size: 14px ;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.btn-default{
+  background: blue;
+}
+
+.output{
+  display: flex;
+  width: 95%;
+  height: 10vh;
+  margin: 20px;
+}
+
+.inner-div{
+  width: 98%;
+  height: 9vh;
+  border: 1px solid grey;
+  margin: 2px;
+  background:lightblue;
+  border-radius: 5px;
+}
+
+.icon-div{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 10px 20px;
+  font-size: 20px;
+}
+
+i{
+  padding: 5px;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border-radius: 5px;
 }
